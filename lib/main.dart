@@ -41,38 +41,41 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Já apertou o botão:',
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            Text(
-              '$_counter vezes',
-              style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.purple,
-              ),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: _incrementCounter,
-              child: Text('Apertar'),
-              style: ElevatedButton.styleFrom(
-                primary: Colors.pink,
-                textStyle: TextStyle(
-                  fontSize: 18,
+      body: Container(
+        color: Colors.lightBlue, // Defina a cor de fundo desejada
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'Já apertou o botão:',
+                style: TextStyle(
+                  fontSize: 20,
                 ),
               ),
-            ),
-          ],
+              Text(
+                '$_counter vezes',
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple,
+                ),
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: _incrementCounter,
+                child: Text('Apertar'),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.pink,
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
