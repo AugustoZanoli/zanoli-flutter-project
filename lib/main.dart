@@ -75,6 +75,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
+              SizedBox(height: 15),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    _counter = 0;
+                  });
+                },
+                child: Text('Resetar'),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.deepOrange,
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
