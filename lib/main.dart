@@ -36,15 +36,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  //Apertar e contar cliques
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.deepOrange,
       ),
       body: Container(
-        color: Colors.lightBlue, // Defina a cor de fundo desejada
+        color: Colors.white10, // Defina a cor de fundo desejada
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -60,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: Colors.purple,
+                  color: Colors.teal,
                 ),
               ),
               SizedBox(height: 20),
@@ -68,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: _incrementCounter,
                 child: Text('Apertar'),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.pink,
+                  primary: Colors.teal,
                   textStyle: TextStyle(
                     fontSize: 18,
                   ),
